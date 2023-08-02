@@ -8,7 +8,7 @@ const Content = ({ items, handleCheckbox, handleDelete }) => {
     const[name, setName] = useState('Anurag');
 
   return (
-    <main>
+    <>
         {items.length ? (
             <ItemList 
                 items={items}
@@ -17,7 +17,7 @@ const Content = ({ items, handleCheckbox, handleDelete }) => {
             />
         ) : (<p>List is empty</p>)}
 
-    </main>
+    </>
   )
 }
 
